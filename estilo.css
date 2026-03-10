@@ -89,7 +89,7 @@ table {
 th, td {
   
     border: 1px solid black; /* Líneas de la tabla */
-    padding: 50px;
+    padding: 10px;
     text-align: Left;
 }
  
