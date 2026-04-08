@@ -1,51 +1,96 @@
+/* RESET BÁSICO */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f2f2f2;
-}
- 
-/* Encabezado */
-header {
-    background-color: lightblue;
+    background-color: midnightblue;
     color: white;
+}
+
+/* ENCABEZADO */
+header {
     text-align: center;
     padding: 20px;
 }
- 
-/* Secciones */
+
+/* MENÚ */
+nav {
+    background-color: midnightblue; /* corregido */
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    background-color: royalblue; /* corregido */
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: deepskyblue;
+}
+
+/* SECCIONES GENERALES */
 .seccion {
-    background-color: white;
-    margin: 10px;
-    padding: 5px;
+    background-color: royalblue;
+    margin: 15px;
+    padding: 15px;
     border-radius: 8px;
 }
- 
-/* Sección con imagen y texto en horizontal */
-.especial {
+
+/* FLEX (unificado para evitar repetir código) */
+.flex {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.Terror {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+
+/* VARIANTES */
+.shooter {
+    align-items: flex-start;
+    gap: 10px;
 }
- .shooter {
-    display: flex;
-    align-items: left;
-    gap: 9px;
-}
+
+/* IMÁGENES */
 .imagen img {
     width: 300px;
-    border-radius: 7px;
+    border-radius: 8px;
 }
- 
+
+/* TEXTO */
 .texto {
-    flex: 10;
+    flex: 1;
 }
- 
-/* Pie de página */
+
+/* PIE */
+footer {
+    background-color: #222;
+    text-align: center;
+    padding: 15px;
+}
+/* TABLAS */
+table {
+    border-collapse: collapse; /* corregido */
+    width: 100%;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left; /* corregido */
+}
+
+th {
+    background-color: midnightblue;
+    color: white;
+}
+
+/* PIE */
 footer {
     background-color: #333;
     color: white;
@@ -53,47 +98,11 @@ footer {
     padding: 15px;
 }
 
-body {
-    font-family: Arial;
-    margin: 0;
-}
- 
-/* MENÚ */
-nav {
-    background-color: #333;
-    padding: 15px;
-    text-align: center;
-}
- 
-nav a {
-    color: white;
-    text-decoration: none;
-    background-color: #4CAF50;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-}
- 
-/* DIVS */
+/* CONTENEDORES GENERALES */
 div {
-    padding: 30px;
-    margin: 0px;
+    padding: 20px;
+    margin: 0;
     background-color: white;
+    color: black;
     border-radius: 8px;
-}
-
-table {
-    border-collapse: none;
-    width: 100%;
-}
- 
-th, td {
-    border: 1px solid black;
-    padding: 10px;
-    text-align: Left;
-}
- 
-th {
-    background-color: Lightblue;
-    color: white;
 }
