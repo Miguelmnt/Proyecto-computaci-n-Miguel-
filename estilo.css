@@ -74,7 +74,7 @@ footer {
 }
 /* TABLAS */
 table {
-    border-collapse: collapse; /* corregido */
+    border-collapse: collapse; 
     width: 100%;
     margin-top: 10px;
 }
@@ -82,7 +82,7 @@ table {
 th, td {
     border: 1px solid #ccc;
     padding: 10px;
-    text-align: left; /* corregido */
+    text-align: left; 
 }
 
 th {
